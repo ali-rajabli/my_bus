@@ -14,8 +14,11 @@ const About = () => {
               Biz dünyanın daha yaxşıya doğru necə hərəkət etdiyini yenidən
               təsəvvür edirik
             </h1>
-            
+
             <div className="text-div">
+              <div className="banner-div">
+                <Image fill src={"/img/mobile_banner.svg"} alt={"Banner"} />
+              </div>
               <p className="text-1">
                 We are Uber. The go-getters. The kind of people who are
                 relentless about our mission to help people go anywhere and get

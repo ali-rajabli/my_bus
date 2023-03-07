@@ -2,6 +2,7 @@
 @import "./common/footer.scss";
 @import "./common/privacy.scss";
 @import "./common/about.scss";
+@import "./common/faq.scss";
 @import "./common/404.scss";
 
 @font-face {
@@ -40,6 +41,11 @@
   font-display: swap;
 }
 
+body {
+  &.menu-opened {
+    overflow: hidden !important;
+  }
+}
 .breadcrumb {
   margin-top: 20px;
   .breadcrumb-item {

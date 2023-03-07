@@ -12,6 +12,12 @@ const Navbar = () => {
     setOpen(false);
   }, [router.pathname]);
 
+  useEffect(() => {
+    open
+      ? document.body.classList.add("menu-opened")
+      : document.body.classList.remove("menu-opened");
+  }, [open]);
+
   return (
     <nav className="navbar-custom">
       <div className="container">
@@ -88,6 +94,9 @@ const Navbar = () => {
                   </Link>
                 </li>
               </ul>
+            </div>
+            <div className="mobile-frame">
+              <Image src={"/img/menu_frame.svg"} fill alt={"Frame"} />
             </div>
           </div>
         </div>

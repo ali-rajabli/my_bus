@@ -75,6 +75,7 @@
 }
 
 .burger-menu {
+  position: relative;
   width: 100vw;
   height: 100%;
   position: fixed;
@@ -99,6 +100,14 @@
         line-height: 22px;
         color: #ffffff;
       }
+    }
+  }
+  .mobile-frame {
+    position: relative;
+    width: 100vw;
+    height: 496px;
+    img {
+      object-fit: cover;
     }
   }
 }
