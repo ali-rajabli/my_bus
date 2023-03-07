@@ -13,7 +13,7 @@ const Footer = () => {
               </div>
             </Link>
           </div>
-          <div className="col-md-6 col-sm-12">
+          <div className="col-md-6 col-sm-12 mb-5">
             <div className="footer-links">
               <Link href="/about">Haqqımızda</Link>
               <Link href="/faq">Tez-tez verilən suallar</Link>
@@ -24,7 +24,23 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-md-3 col-sm-12">
-            <div className="social-links"></div>
+            <div className="social-links">
+              <div className="img-div">
+                <Link target={"_blank"} href={"/"}>
+                  <Image src={"/img/facebook.svg"} fill alt={"Facebook"} />
+                </Link>
+              </div>
+              <div className="img-div">
+                <Link target={"_blank"} href={"/"}>
+                  <Image src={"/img/instagram.svg"} fill alt={"Instagram"} />
+                </Link>
+              </div>
+              <div className="img-div">
+                <Link target={"_blank"} href={"/"}>
+                  <Image src={"/img/linkedin.svg"} fill alt={"LinkedIn"} />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         <div className="footer-sub-div">

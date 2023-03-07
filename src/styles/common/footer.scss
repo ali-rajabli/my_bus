@@ -32,7 +32,18 @@
     }
     .social-links {
       display: flex;
-      gap: 10px;
+      justify-content: center;
+      gap: 30px;
+      .img-div {
+        width: 21px;
+        height: 21px;
+        position: relative;
+        a {
+          img {
+            object-fit: cover;
+          }
+        }
+      }
     }
   }
   .footer-sub-div {

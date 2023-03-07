@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,10 +15,18 @@ export default function Home() {
               </p>
               <div className="flex-div">
                 <div className="img-div">
-                  <Image fill alt={"App Store"} src={"/img/appstore.png"} />
+                  <Link target={"_blank"} href={"/"}>
+                    <Image fill alt={"App Store"} src={"/img/appstore.png"} />
+                  </Link>
                 </div>
                 <div className="img-div">
-                  <Image fill alt={"Google Play"} src={"/img/googleplay.svg"} />
+                  <Link target={"_blank"} href={"/"}>
+                    <Image
+                      fill
+                      alt={"Google Play"}
+                      src={"/img/googleplay.svg"}
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -76,10 +85,14 @@ export default function Home() {
             </p>
             <div className="flex-div">
               <div className="img-div">
-                <Image fill alt={"App Store"} src={"/img/appstore.png"} />
+                <Link target={"_blank"} href={"/"}>
+                  <Image fill alt={"App Store"} src={"/img/appstore.png"} />
+                </Link>
               </div>
               <div className="img-div">
-                <Image fill alt={"Google Play"} src={"/img/googleplay.svg"} />
+                <Link target={"_blank"} href={"/"}>
+                  <Image fill alt={"Google Play"} src={"/img/googleplay.svg"} />
+                </Link>
               </div>
             </div>
           </div>
