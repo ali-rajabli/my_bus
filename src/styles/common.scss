@@ -1,5 +1,7 @@
 @import "./common/navbar.scss";
 @import "./common/footer.scss";
+@import "./common/privacy.scss";
+@import "./common/about.scss";
 @import "./common/404.scss";
 
 @font-face {
@@ -59,30 +61,6 @@
       font-size: 12px;
       line-height: 12px;
       color: #000000;
-    }
-  }
-}
-
-.privacy {
-  .privacy-div {
-    margin-top: 60px;
-    h1 {
-      font-weight: 700;
-      font-size: 50px;
-      line-height: 54px;
-      color: rgba(0, 0, 0, 0.8);
-    }
-    span {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 40px;
-      color: rgba(0, 0, 0, 0.8);
-    }
-    p {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 40px;
-      color: rgba(0, 0, 0, 0.8);
     }
   }
 }
