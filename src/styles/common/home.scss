@@ -1,0 +1,315 @@
+.home {
+  .home-frame-div-1 {
+    overflow-x: hidden;
+    position: relative;
+    .slogan-div {
+      top: 84px;
+      position: absolute;
+      z-index: 2;
+      h1 {
+        max-width: 488px;
+        margin-bottom: 80px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 54px;
+        color: #000000;
+      }
+      .app-div {
+        max-width: 407px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 18px;
+          color: rgba(0, 0, 0, 0.6);
+        }
+        .flex-div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .img-div {
+            width: 193px;
+            height: 57px;
+            position: relative;
+            img {
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .frame-div {
+      width: 100vw;
+      height: 655px;
+      position: relative;
+      img {
+        object-fit: cover;
+      }
+    }
+    .frame-mobile-div {
+      display: none;
+    }
+  }
+  .home-frame-div-2 {
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    .slogan-div {
+      top: 84px;
+      h2 {
+        max-width: 488px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+        color: #000000;
+      }
+      .app-div {
+        max-width: 407px;
+        display: flex;
+        flex-direction: column;
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 18px;
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+    .frame-div {
+      width: 734px;
+      height: 593px;
+      position: relative;
+      img {
+        object-fit: cover;
+      }
+    }
+    .frame-mobile-div {
+      display: none;
+    }
+  }
+  .home-frame-div-3 {
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    .slogan-div {
+      padding-left: 100px;
+      top: 84px;
+
+      h2 {
+        max-width: 488px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+        color: #000000;
+      }
+      .app-div {
+        max-width: 407px;
+        display: flex;
+        flex-direction: column;
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 18px;
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+    .frame-div {
+      margin-left: auto;
+      width: 793px;
+      height: 837px;
+      position: relative;
+      img {
+        object-fit: cover;
+      }
+    }
+    .frame-mobile-div {
+      display: none;
+    }
+  }
+  .home-frame-div-4 {
+    overflow-x: hidden;
+    position: relative;
+    .slogan-div {
+      top: 140px;
+      left: 35%;
+      z-index: 2;
+      position: absolute;
+      h1 {
+        max-width: 488px;
+        margin-bottom: 80px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 54px;
+        color: #000000;
+      }
+      .app-div {
+        max-width: 407px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 18px;
+          color: rgba(0, 0, 0, 0.6);
+        }
+        .flex-div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .img-div {
+            width: 193px;
+            height: 57px;
+            position: relative;
+            img {
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .frame-div {
+      width: 100vw;
+      height: 780px;
+      position: relative;
+      img {
+        object-fit: cover;
+      }
+    }
+    .frame-mobile-div {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .home {
+    .home-frame-div-1 {
+      .slogan-div {
+        h1 {
+          font-size: 35px;
+          line-height: 40px;
+        }
+      }
+      .frame-div {
+        display: none;
+      }
+      .frame-mobile-div {
+        display: block;
+        width: 100vw;
+        height: 898px;
+        position: relative;
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+    .home-frame-div-2 {
+      margin-top: 80px;
+      overflow-y: hidden;
+      flex-direction: column-reverse;
+      gap: 30px;
+      align-items: normal;
+      padding-left: 30px;
+      .slogan-div {
+        margin-bottom: 20px;
+        h2 {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+    }
+    .home-frame-div-3 {
+      flex-direction: column;
+      margin-top: 85px;
+      align-items: normal;
+      .slogan-div {
+        padding-left: 30px;
+        h2 {
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+      .frame-div {
+        height: 837px;
+      }
+    }
+    .home-frame-div-4 {
+      .slogan-div {
+        left: 0;
+        padding-left: 30px;
+        top: 50px;
+        h1 {
+          font-size: 35px;
+          line-height: 40px;
+        }
+      }
+      .frame-div {
+        display: none;
+      }
+      .frame-mobile-div {
+        display: block;
+        width: 100vw;
+        height: 894px;
+        position: relative;
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576.98px) {
+  .home {
+    .home-frame-div-1 {
+        .slogan-div {
+            .app-div {
+                max-width: 364px;
+            }
+        }
+    }
+    .home-frame-div-2 {
+      .frame-div {
+        display: none;
+      }
+      .frame-mobile-div {
+        display: block;
+        width: 100vw;
+        height: 503px;
+        position: relative;
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+    .home-frame-div-3 {
+      .frame-div {
+        display: none;
+      }
+      .frame-mobile-div {
+        display: block;
+        width: 100vw;
+        height: 462px;
+        position: relative;
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+    .home-frame-div-4 {
+        .frame-mobile-div {
+            height: 536px;
+        }
+    }
+  }
+}

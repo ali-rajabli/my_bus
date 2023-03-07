@@ -18,7 +18,7 @@ const Faq = () => {
             </div>
             <div className="right-div">
               <div className="faq-accordions">
-                <Accordion className="faq-accordion" alwaysOpen>
+                <Accordion className="faq-accordion" defaultActiveKey="0">
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
                       Lorem ipsum dolor sit amet, adipiscing consectetur?
