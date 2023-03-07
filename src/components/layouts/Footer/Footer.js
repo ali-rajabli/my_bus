@@ -18,7 +18,9 @@ const Footer = () => {
               <Link href="/about">Haqqımızda</Link>
               <Link href="/faq">Tez-tez verilən suallar</Link>
               <Link href="/privacy">Gizlilik şərtləri</Link>
-              <Link href="/startup">Startup</Link>
+              <Link target={"_blank"} href={"https://bcp.az/"}>
+                Startup
+              </Link>
             </div>
           </div>
           <div className="col-md-3 col-sm-12">
