@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 const Navbar = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
-  console.log(router.pathname);
 
   useEffect(() => {
     setOpen(false);
@@ -72,8 +71,8 @@ const Navbar = () => {
             className="burger-menu"
             style={
               open
-                ? { transform: "translateX(0px)" }
-                : { transform: "translateX(-100vw)" }
+                ? { transform: "translateX(0)" }
+                : { transform: "translateX(100vw)" }
             }
           >
             <div className="container">

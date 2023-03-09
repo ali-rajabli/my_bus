@@ -1,6 +1,16 @@
 import Image from "next/image";
+import { useEffect } from "react";
 import { Accordion, Breadcrumb } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
+import { getFaqPage } from "@/reducers/pageSlice";
 const Faq = () => {
+  const dispatch = useDispatch();
+  const { faqData } = useSelector((state) => state.pagesData);
+
+  useEffect(() => {
+    dispatch(getFaqPage());
+  }, [dispatch]);
+
   return (
     <div className="faq">
       <div className="container">
@@ -9,7 +19,7 @@ const Faq = () => {
           <Breadcrumb.Item active>F.A.Q.</Breadcrumb.Item>
         </Breadcrumb>
         <div className="faq-div">
-          <h1>Sərnişin təhlükəsizliyi haqqında tez-tez verilən suallar</h1>
+          <h1>{faqData?.title}</h1>
           <div className="flex-div">
             <div className="left-div">
               <div className="img-div">
@@ -18,7 +28,21 @@ const Faq = () => {
             </div>
             <div className="right-div">
               <div className="faq-accordions">
-                <Accordion className="faq-accordion" defaultActiveKey="0">
+                <Accordion className="faq-accordion" defaultActiveKey={0}>
+                  {faqData?.data?.map((innerData, index) => {
+                    return (
+                      <Accordion.Item key={index} eventKey={index}>
+                        <Accordion.Header>
+                          {innerData?.question}
+                        </Accordion.Header>
+                        <Accordion.Body className="faq-accordion-body">
+                          <p>{innerData?.answer}</p>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                    );
+                  })}
+                </Accordion>
+                {/* <Accordion className="faq-accordion" defaultActiveKey="0">
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>
                       Lorem ipsum dolor sit amet, adipiscing consectetur?
@@ -99,7 +123,7 @@ const Faq = () => {
                       </p>
                     </Accordion.Body>
                   </Accordion.Item>
-                </Accordion>
+                </Accordion> */}
               </div>
             </div>
           </div>
